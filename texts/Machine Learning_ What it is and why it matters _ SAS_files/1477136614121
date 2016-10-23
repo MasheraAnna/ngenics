@@ -1,0 +1,40 @@
+(function(doc, script) {
+    var js, 
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.async = 1;
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.ckW('_SI_VID_1.681cceba2200012815576dcc','d03d1c77606e416026601166','/','.sas.com,.www.sas.com',1540208613929);
+}
+else{
+    com_sas_ci_acs.ob_util_async.ckW('_SI_VID_1.681cceba2200012815576dcc','d03d1c77606e416026601166','/','.sas.com,.www.sas.com',1540208613929);
+}
+    if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+        com_sas_ci_acs.ob_util.newvid = true;
+    }
+    else{
+        com_sas_ci_acs.newvid = true;
+    }
+    com_sas_ci_acs.ob_util_async.load_guid = '1fd43bbf9812fb36f1256260';
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.sckW('_SI_SID_1.681cceba2200012815576dcc','254f13c5f6c1600f5be0d677','/','.sas.com,.www.sas.com',new Date().getTime(),0);
+}
+else{
+    com_sas_ci_acs.ob_util_async.sckW('_SI_SID_1.681cceba2200012815576dcc','254f13c5f6c1600f5be0d677','/','.sas.com,.www.sas.com',new Date().getTime(),0);
+}
+
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    var vid = com_sas_ci_acs.ob_util.ckR('_SI_VID_1.681cceba2200012815576dcc');
+    var sid = com_sas_ci_acs.ob_util.ckR('_SI_SID_1.681cceba2200012815576dcc');
+    if ((null!=vid) && (null!=sid) && (null==com_sas_ci_acs.ob_util.ckR('_SI_DNT'))) {
+        add('https://execution-use.ci360.sas.com:443/t/s/c/681cceba2200012815576dcc/'+new Date().getTime()+'?vid='+vid+'&sid='+sid.split('.')[0]+'&p='+encodeURIComponent(com_sas_ci_acs.ob_util.parseUri(document.URL).path)+'&domain='+document.domain+'&params='+encodeURIComponent(com_sas_ci_acs.ob_util.parseUri(document.URL).search));
+    }
+}
+
+}(document, 'script'));
