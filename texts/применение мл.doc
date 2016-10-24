@@ -52,6 +52,14 @@
 
 Приложения на основе искусственного интеллекта могут в режиме реального времени анализировать огромные потоки информации, обнаруживать аномалии и закономерности. Благодаря тому, что такие приложения могут делать это значительно быстрее и точнее, чем человек, они прекрасно подходят для создания систем мониторинга, например, отслеживания случаев мошенничества с кредитными картами, обеспечение кибербезопасности, обнаружение ранних признаков заболеваний или серьезных изменений окружающей среды.
 
+Сельское хозяйство
+
+Montreal startup Motorleaf has developed an autonomous indoor farming system that uses networked sensors and machine learning to constantly monitor an indoor farm’s environment and plant growth and adjust lighting, temperature, humidity, water, and soil nutrient levels to maximize a farm’s productivity.40 The system also reports 40,000 data points per user per week to Motorleaf, which uses machine learning algorithms to analyze this data and predict problems that could arise to prompt farmers to take preventative action.41
+Автономные системы мониторинга на основе искусственного интеллекта, совмещенные с сетью сенсеров, отлично работают в сельском хозяйстве и используют машинное обучение, чтобы постоянно следить за показателями влажности и температуры в теплицах и за ростом растений, регулирют уровень освещенности, влажность, поток воды, температуру и уровень содержания минеральных веществ и удобрений в почве, максимизируя производительность (урожайность) фермы. Система так же включает в себя алгоритм машинного обучения, который составляет предсказания возможных проблем, чтобы предупредить фермеров.
+
+
+
+
 Исследования и аналитика
 
 На основе анализа больших объемов информации (big data) при помощи алгоритмов машинного обучения можно получать важные данные, а так же находить новые неожиданные решения задач, по средствам компьютерного моделирования. К примеру, динамические аналитические модели искусственного интеллекта учатся и адаптируются к данным в процессе работы, обнаруживая абстрактные логические взаимосвязи и аналитические выводы, на много эффективнее, чем традиционные алгоритмы.
@@ -82,4 +90,13 @@ Interacting with Machines
 
 AI can automatically coordinate complicated machine-to-machine interactions. For example, a control system for a data center can use AI to continuously monitor computing activity, internal temperature, and environmental conditions, and make adjustments to cooling systems to optimize performance while minimizing energy costs.28 This ability also allows for multiple separate AI systems to coordinate with each other, such as a fleet of autonomous trucks managing themselves in a platoon formation to reduce fuel consumption, or autonomous robots in a warehouse that communicate with each other to sort and retrieve items.29
 
+
+
+
+
+
+
 Индустрия
+
+accessibility; agriculture; business operations; consumer convenience; disaster prevention and response; education; energy; environment; health care: prevention and screening; health care: treatment and monitoring; industrial operations; public safety; social good; and transportation. Each example also lists which AI functions are involved.
+
