@@ -469,16 +469,24 @@ csmall2 {
 display: none;
 }
 
+.title-shadow{
+	background-color: rgba(0, 0, 0, 0.45);
+	margin-top: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 400px;
+}
 
 .site-title{
+	margin-top: 70px;
 	color: #fff;
 	width: 100%;
 	text-align: center;
 	position: absolute;
 	top: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 60%;
-	padding-top: 10%;
+	height: 400px;
+	transform: translateY(25%);
 }
 
 #trailer{
@@ -486,7 +494,7 @@ display: none;
     width: 100%;
     height: 400px;
     overflow: hidden;
-	margin-top:70px;
+	margin-top: 70px;
 }
 
 .title{
@@ -504,6 +512,7 @@ display: none;
 	font-size: 16px;
 	margin-left: 30px;
 	border-radius: 5px;
+	border-width: 1.5px;
 }
 
 .portfolio-centered{
@@ -518,7 +527,15 @@ display: none;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-.margin{
+.competence{
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+.competence:hover{
+	
+}
+
+.margin30{
+	margin-top: 30px;
 }
