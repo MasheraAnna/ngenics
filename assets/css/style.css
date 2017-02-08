@@ -355,6 +355,15 @@ a:focus {
 	color: #00b3fe
 }
 
+#footerwrap a {
+	color: #bfc9d3;
+	padding-right: 25px;
+}
+
+#footerwrap a:hover {
+	color: #00b3fe
+}
+
 /*	################################################################
 	PAGE CONFIGURATIONS
 ################################################################# */
@@ -542,4 +551,20 @@ display: none;
 
 .vertical-align {
 	transform: translateY(15%);
+}
+
+/***additional************************************/
+.ai-app-text{
+	margin-top: 15px;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+}
+
+.expertise-list{
+	margin-left: 20px;
 }

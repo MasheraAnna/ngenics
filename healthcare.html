@@ -44,22 +44,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">DPL LAB</a>
+          <a class="navbar-brand" href="index.html">NGENICS</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li class="active"><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="single-post.html">SINGLE POST</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="single-project.html">SINGLE PROJECT</a></li>
-              </ul>
-            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -123,12 +113,35 @@
 		 		<h4>AI interventions types in use</h4>
 		 		<div class="hline"></div>
 		 		<div class='topdiv'>
-		 				<img src='assets/img/grey_icons/icon1.png' width='100px'/>
-		 				<img src='assets/img/grey_icons/icon3.png' width='100px'/>
-		 				<img src='assets/img/grey_icons/icon4.png' width='100px'/>
+		 				
+                       	<img data-toggle='tooltip' 
+                       		data-placement='left' 
+                       		title='Monitoring'
+                       		src='assets/img/grey_icons/icon6.png' 
+                       		width='100px'/>
+		 				<img data-toggle='tooltip' 
+		 					data-placement='left' 
+		 					title='Predicting'
+		 					src='assets/img/grey_icons/icon3.png' 
+		 					width='100px'/>
+		 				<img data-toggle='tooltip' 
+		 					data-placement='left' 
+		 					title='Interpreting'
+		 					src='assets/img/grey_icons/icon4.png' 
+		 					width='100px'/>
 		 		</div>
-		 		<div><img src='assets/img/grey_icons/icon7.png' width='100px'/></div>
-
+		 		<div>
+		 			<img data-toggle='tooltip' 
+                       		data-placement='left' 
+                       		title='Monitoring'
+                       		src='assets/img/grey_icons/icon1.png' 
+                       		width='100px'/>
+                    <img data-toggle='tooltip' 
+                       		data-placement='left' 
+                       		title='Monitoring'
+                       		src='assets/img/grey_icons/icon2.png' 
+                       		width='100px'/>
+		 		</div>
 		 	</div>
 		 	
 	 	</div><! --/row -->
@@ -443,26 +456,29 @@
 		 		<div class="col-lg-4">
 		 			<h4>About</h4>
 		 			<div class="hline-w"></div>
-		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		 			<p>
+                        <a href="#headerwrap"> Applied AI technologies</a><br/>
+                        <a href="#aiapps"> AI applications </a> <br/>
+                        <a href="#portfoliowrap"> Integrating AI into industries </a> <br/>
+                        <a href="#competence"> Key Competence & Area of expertise </a> <br/>              
+                    </p>
 		 		</div>
 		 		<div class="col-lg-4">
 		 			<h4>Social Links</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				<a href="#"><i class="fa fa-dribbble"></i></a>
-		 				<a href="#"><i class="fa fa-facebook"></i></a>
-		 				<a href="#"><i class="fa fa-twitter"></i></a>
-		 				<a href="#"><i class="fa fa-instagram"></i></a>
-		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 				<a href="https://vk.com/id839683"><i class="fa fa-vk"></i></a>
+		 				<a href="https://www.facebook.com/mashera.anna"><i class="fa fa-facebook"></i></a>
+		 				<a href="https://twitter.com/annamashera"><i class="fa fa-twitter"></i></a>
 		 			</p>
 		 		</div>
 		 		<div class="col-lg-4">
-		 			<h4>Our Bunker</h4>
+		 			<h4>Location</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				Some Ave, 987,<br/>
-		 				23890, New York,<br/>
-		 				United States.<br/>
+		 				Ananievsky pereulok, 4/2,<br/>
+		 				107045, Moscow,<br/>
+		 				Russia.<br/>
 		 			</p>
 		 		</div>
 		 	
@@ -482,100 +498,6 @@
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
   	<script type="text/javascript" src="assets/slick/slick.js"></script>
-
-    <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
-	});
-})(jQuery);
-
-// galery
-
-$(document).ready(function(){
-	$('.carousel-industries').slick({
-	    slidesToShow: 5,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
-	});
-});
-
-</script>
+    <script type="text/javascript" src="assets/js/portfolio-slick.js"></script>
   </body>
 </html>
